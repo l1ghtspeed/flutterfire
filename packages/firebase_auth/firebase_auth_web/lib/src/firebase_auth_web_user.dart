@@ -29,8 +29,7 @@ class UserWeb extends UserPlatform {
             'creationTime': _dateFormat
                 .parse(_webUser.metadata.creationTime)
                 .millisecondsSinceEpoch,
-            'lastSignInTime': _dateFormat
-                .parse(_webUser.metadata.lastSignInTime)
+            'lastSignInTime': DateTime.now()
                 .millisecondsSinceEpoch,
           },
           'phoneNumber': _webUser.phoneNumber,
